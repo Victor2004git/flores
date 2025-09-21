@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ramo de Girasoles para Lizeth</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="dedicatoria">Lizeth, que estas flores amarillas llenen tu día de luz y alegría.</h1>
+  </header>
+
+  <main>
+    <section class="card glass">
+      <!-- Ramo de girasoles en SVG -->
+      <svg id="ramo" viewBox="0 0 720 820" aria-label="Ramo de girasoles amarillos para Lizeth">
+        <defs>
+          <!-- Gradientes -->
+          <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#fff7d6"/>
+            <stop offset="100%" stop-color="#e9c984"/>
+          </linearGradient>
+          <linearGradient id="stem" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#2f8f2f"/>
+            <stop offset="100%" stop-color="#165c2c"/>
+          </linearGradient>
+          <radialGradient id="petalSun" cx="50%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#fffbd1"/>
+            <stop offset="55%" stop-color="#ffd343"/>
+            <stop offset="100%" stop-color="#f2ae00"/>
+          </radialGradient>
+          <radialGradient id="core" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stop-color="#7a4d1a"/>
+            <stop offset="100%" stop-color="#4a2e08"/>
+          </radialGradient>
+          <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity=".35"/>
+          </filter>
+          <filter id="paperNoise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" stitchTiles="stitch" result="t"/>
+            <feColorMatrix type="saturate" values="0"/>
+            <feComponentTransfer><feFuncA type="table" tableValues="0 0 .02 .05"/></feComponentTransfer>
+            <feBlend mode="multiply" in2="SourceGraphic"/>
+          </filter>
+          <!-- Pétalo de girasol (forma más puntiaguda) -->
+          <g id="petaloSun">
+            <path d="M0,-58 C18,-52 34,-32 28,-8 C22,16 -2,24 -10,2 C-18,-20 -12,-44 0,-58 Z"
+                  fill="url(#petalSun)" stroke="#d18f00" stroke-width="1.2"/>
+            <path d="M0,-42 C10,-38 16,-26 14,-16 C12,-8 4,-4 0,-10 C-6,-20 -6,-32 0,-42 Z"
+                  fill="rgba(255,255,255,.45)"/>
+          </g>
+          <!-- Hoja -->
+          <g id="leaf">
+            <path d="M0,0 C50,-30 82,14 68,46 C46,86 -14,60 0,0 Z" fill="#2a7f3a" stroke="#1f5d23" stroke-width="1.4"/>
+            <path d="M10,6 C32,4 48,24 40,40 C28,60 10,48 10,6 Z" fill="rgba(255,255,255,.14)"/>
+          </g>
+        </defs>
+
+        <!-- Papel envolvente -->
+        <g filter="url(#shadow)">
+          <path d="M360 790 L180 360 Q360 300 540 360 Z" fill="url(#paper)" stroke="#d3b671" stroke-width="2"/>
+          <path d="M360 790 L235 385 Q360 340 485 385 Z" fill="#fff4cc" opacity=".95" filter="url(#paperNoise)"/>
+        </g>
+
+        <!-- Tallos principales -->
+        <g class="sway">
+          <path d="M360 720 C300 600 270 480 250 400" class="stem"/>
+          <path d="M360 720 C405 600 440 500 470 420" class="stem"/>
+          <path d="M360 720 C360 610 360 520 360 440" class="stem"/>
+        </g>
+
+        <!-- Hojas -->
+        <g class="sway">
+          <g transform="translate(290,450) rotate(-18) scale(1.2)"><use href="#leaf"/></g>
+          <g transform="translate(315,510) rotate(18) scale(1.1)"><use href="#leaf"/></g>
+          <g transform="translate(420,490) rotate(12) scale(1.05)"><use href="#leaf"/></g>
+          <g transform="translate(405,555) rotate(-14)"><use href="#leaf"/></g>
+        </g>
+
+        <!-- GIRASOLES -->
+        <g class="flowers sway">
+          <!-- Izquierdo -->
+          <g transform="translate(275,380)">
+            <g class="sunflower pulse">
+              <g class="petals"><use href="#petaloSun" transform="rotate(0.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(20.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(40.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(60.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(80.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(100.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(120.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(140.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(160.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(180.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(200.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(220.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(240.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(260.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(280.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(300.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(320.0) translate(0,-56)"/>
+<use href="#petaloSun" transform="rotate(340.0) translate(0,-56)"/></g>
+              <g class="core">
+                <circle r="40" fill="url(#core)"/>
+                <circle cx="28.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="26.31" cy="9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="21.45" cy="18.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="14.0" cy="24.25" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="4.86" cy="27.57" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-4.86" cy="27.57" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-14.0" cy="24.25" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-21.45" cy="18.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-26.31" cy="9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-28.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-26.31" cy="-9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-21.45" cy="-18.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-14.0" cy="-24.25" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-4.86" cy="-27.57" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="4.86" cy="-27.57" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="14.0" cy="-24.25" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="21.45" cy="-18.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="26.31" cy="-9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+
+              </g>
+            </g>
+          </g>
+
+          <!-- Centro (más grande) -->
+          <g transform="translate(360,360)">
+            <g class="sunflower pulse big">
+              <g class="petals"><use href="#petaloSun" transform="rotate(0.0) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(16.363636363636363) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(32.72727272727273) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(49.09090909090909) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(65.45454545454545) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(81.81818181818181) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(98.18181818181819) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(114.54545454545455) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(130.9090909090909) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(147.27272727272728) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(163.63636363636363) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(180.0) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(196.36363636363637) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(212.72727272727272) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(229.0909090909091) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(245.45454545454544) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(261.8181818181818) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(278.1818181818182) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(294.54545454545456) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(310.9090909090909) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(327.27272727272725) translate(0,-64)"/>
+<use href="#petaloSun" transform="rotate(343.6363636363636) translate(0,-64)"/></g>
+              <g class="core">
+                <circle r="48" fill="url(#core)"/>
+                <circle cx="34.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="32.62" cy="9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="28.6" cy="18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="22.27" cy="25.7" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="14.12" cy="30.93" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="4.84" cy="33.65" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-4.84" cy="33.65" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-14.12" cy="30.93" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-22.27" cy="25.7" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-28.6" cy="18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-32.62" cy="9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-34.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-32.62" cy="-9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-28.6" cy="-18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-22.27" cy="-25.7" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-14.12" cy="-30.93" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-4.84" cy="-33.65" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="4.84" cy="-33.65" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="14.12" cy="-30.93" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="22.27" cy="-25.7" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="28.6" cy="-18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="32.62" cy="-9.58" r="2.6" fill="rgba(0,0,0,.3)"/>
+
+              </g>
+            </g>
+          </g>
+
+          <!-- Derecho -->
+          <g transform="translate(445,385)">
+            <g class="sunflower pulse">
+              <g class="petals"><use href="#petaloSun" transform="rotate(0.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(22.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(45.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(67.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(90.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(112.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(135.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(157.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(180.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(202.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(225.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(247.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(270.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(292.5) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(315.0) translate(0,-52)"/>
+<use href="#petaloSun" transform="rotate(337.5) translate(0,-52)"/></g>
+              <g class="core">
+                <circle r="38" fill="url(#core)"/>
+                <circle cx="26.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="24.02" cy="9.95" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="18.38" cy="18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="9.95" cy="24.02" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="0.0" cy="26.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-9.95" cy="24.02" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-18.38" cy="18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-24.02" cy="9.95" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-26.0" cy="0.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-24.02" cy="-9.95" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-18.38" cy="-18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-9.95" cy="-24.02" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="-0.0" cy="-26.0" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="9.95" cy="-24.02" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="18.38" cy="-18.38" r="2.6" fill="rgba(0,0,0,.3)"/>
+<circle cx="24.02" cy="-9.95" r="2.6" fill="rgba(0,0,0,.3)"/>
+
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- Listón -->
+        <g class="ribbon">
+          <path d="M320 500 Q360 470 400 500 Q360 530 320 500 Z" class="bow"/>
+          <path d="M342 508 q-24 34 -10 74" class="tail"/>
+          <path d="M378 508 q18 30 10 74" class="tail"/>
+        </g>
+      </svg>
+
+      <div class="actions">
+        <button id="toggleAnim">Pausar animación</button>
+        <button id="toggleSeeds">Semillas OFF</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

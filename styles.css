@@ -1,0 +1,65 @@
+/* ===== Girasoles Premium ===== */
+:root{
+  --txt:#fff7e1;
+  --accent:#ffd166;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--txt);
+  font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  overflow-x:hidden;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(255,255,255,.08), transparent 60%),
+    linear-gradient(160deg, #08101e 0%, #0d1f36 55%, #0a2937 100%);
+}
+
+header{ width:100%; padding-top: 18px; }
+#dedicatoria{
+  margin: 10px 16px 12px;
+  text-align:center;
+  font-weight:700;
+  font-size: clamp(1.2rem, 2.6vw, 2.2rem);
+  text-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+
+main{
+  display:flex; align-items:center; justify-content:center;
+  min-height: 74vh;
+}
+
+.card{
+  width: min(94vw, 980px);
+  margin: 0 auto;
+  padding: 18px 24px 22px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+#ramo{ width:100%; height:auto; }
+
+/* SVG styling */
+.stem{ fill:none; stroke:url(#stem); stroke-width:5; stroke-linecap:round; }
+.bow{ fill:var(--accent); stroke:#e2b24e; }
+.tail{ fill:none; stroke:#e2b24e; stroke-width:2.4; stroke-linecap:round; }
+
+/* Animations */
+@keyframes sway { 0%,100%{ transform: rotate(-1.6deg) } 50%{ transform: rotate(1.6deg) } }
+@keyframes pulse { 0%,100%{ transform: scale(1) } 50%{ transform: scale(1.035) } }
+
+.sway{ transform-origin:50% 50%; animation: sway 6.8s ease-in-out infinite; }
+.pulse{ transform-origin:center; animation: pulse 7.1s ease-in-out infinite; }
+.big{ animation-duration: 7.4s; }
+
+.actions{ display:flex; gap:12px; justify-content:center; margin-top: 12px; }
+.actions button{
+  background: transparent; border: 1px solid rgba(255,255,255,.3);
+  color: var(--txt); padding: 10px 14px; border-radius: 12px; cursor: pointer;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+.actions button:hover{ transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.5); }
